@@ -1,0 +1,40 @@
+
+
+public class MaestroSDK {
+
+    public string Server {get; set;}
+	public string User {get; set;}
+    public string Key {get; set;}
+	public string Token{get; set;}
+	
+	
+    public void Login(string server = "",
+                    string Key = "",
+                    string Token = "")
+    {
+
+        if server:
+            self.server = server
+        self._login = login or self._login
+        self._key = key or self._key
+        if not self._server:
+            raise ValueError('Server is required.')
+        if not self._login:
+            raise ValueError('Login is required.')
+        if not self._key:
+            raise ValueError('Key is required.')
+        self.logoff()
+
+        if (!Utils.CheckServer(server)){
+            throw 
+        }
+
+        if (string.IsNullOrEmpty(Server) )
+        if (string.IsNullOrEmpty(Server) )
+        if (string.IsNullOrEmpty(Server) )
+
+
+    }
+
+	
+}
