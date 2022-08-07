@@ -1,0 +1,25 @@
+using System.Text.RegularExpressions;
+
+public static class Utils{
+    
+
+
+    public static bool CheckServer(string server){
+        //String input = @"var product_pic_fn=;var firmware_ver='20.02.024';var wan_ip='92.75.120.206';if (parent.location.href != window.location.href)";
+        Regex regexIp = new Regex(@"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b");
+
+        if (regexIp.IsMatch(server))
+                    return true;
+
+        bool isUri = Uri.IsWellFormedUriString(server, UriKind.RelativeOrAbsolute);
+
+        if (isUri)
+                return true;
+
+        return false;
+
+    }
+
+    
+
+}
